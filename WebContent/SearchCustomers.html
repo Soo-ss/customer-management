@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="Style.css">
 <meta charset="EUC-KR">
 <title></title>
 </head>
 <body>
-<h1>고객 정보 조회</h1><br>
 
-찾고자 하는 고객의 이름을 입력해주세요.
-<form action = "ShowCustomers.jsp">
-First Name : <input type="text" name = "first_name" />
-Last Name :  <input type="text" name = "last_name" />
-<input type="submit"></input>
-</form>
+<div class="container">
+	<div>
+		<h1>고객 정보 조회</h1>
+		<form action = "ShowCustomers.jsp">
+			<div class="input_box">
+				<input type="text" name = "first_name" placeholder="성"/>
+			</div>
+			<div class="input_box">
+				<input type="text" name = "last_name" placeholder="이름"/>
+			</div>
+			
+			<div class="input_box">
+				<input class="submit_btn" type="submit" value="검색"></input>
+			</div>
+		</form>
+	</div>
+</div>
 
 </body>
 </html>

@@ -8,18 +8,42 @@
 </head>
 <body>
 
-<div class="container">
+<div class="signup_container">
 	<h1>회원가입</h1>
 	<form action = "ActionSignup.jsp">
 		<div class="input_box"> 
-			<input type="text" name = "id" placeholder="ID를 10자 이내로 입력하세요" /><br> 
+			<input type="text" name = "employee_id" placeholder="ID" /><br> 
 		</div>
 		<div class="input_box"> 
-			<input type="text" name = "pwd" placeholder="패스워드를 12자 이내로 입력하세요"/>
+			<input type="text" name = "pwd" placeholder="패스워드 (12자 이내)"/>
 		</div>
-		<input class="login_btn" type="submit" value="회원가입"></input>
-	<a href = "http://localhost:8080/CustomerManagement/Login.jsp">
-		<div class="signup_btn">
+		
+		<div class="input_box"> 
+			<input type="text" name = "first_name" placeholder="성"/>
+		</div>
+		
+		<div class="input_box"> 
+			<input type="text" name = "last_name" placeholder="이름"/>
+		</div>
+		
+		<div class="input_box"> 
+			<input type="text" name = "phone" placeholder="연락처"/>
+		</div>
+		
+		<div class="input_box"> 
+			<input type="text" name = "email" placeholder="이메일"/>
+		</div>
+		
+		<div class="input_box"> 
+			<input type="text" name = "job_title" placeholder="직업"/>
+		</div>
+		<div class="input_box"> 
+			<input type="text" name = "manager_id" placeholder="매니저 ID"/>
+		</div>
+		
+		<input class="submit_btn" type="submit" value="회원가입"></input>
+		<a href = "http://localhost:8080/CustomerManagement/Login.jsp">
+		<div class="goLogin_btn">
 				로그인 화면으로 돌아가기
 		</div>
 	</a>

@@ -8,17 +8,29 @@
 		justify-content:center;
 	}
 	.container {
+		display:flex;
+		justify-content:center;
+		align-items:center;
 		position:relative;
 		top:150px;
 		text-align : center;
-		justify-content:center;
-		align-items:center;
 		background-color:#eee;
 		width:380px;
 		height:400px;
 		border-radius : 8px;
 		
 	}
+	
+	.signup_container {
+		position:relative;
+		top:50px;
+		text-align : center;
+		background-color:#eee;
+		width:450px;
+		height:650px;
+		border-radius : 8px;
+	}
+	
 	.input_box {
 		padding-bottom:20px;
 	}
@@ -26,9 +38,10 @@
 	input {
   		width:300px;
   		height:30px;
+  		border-radius:6px;
 	}
 	
-	.login_btn {
+	.submit_btn {
 		background-color:#2e6da4;
 		border-radius:5px;
 		outline:0;
@@ -37,7 +50,7 @@
 		cursor:pointer;
 	}
 	
-	.login_btn:hover {
+	.submit_btn:hover {
 		transition : all 200ms ease;
 		background-color:#275781;
 	}
@@ -47,7 +60,7 @@
 		justify-content:center;
 		align-items:center;
 		position:relative;
-		left:40px;
+		left:5px;
 		top:20px;
 		color:white;
 		background-color:#2e6da4;
@@ -60,6 +73,26 @@
 	
 	.signup_btn:hover {
 		transition : all 200ms ease;
+		background-color:#275781;
+	}
+	
+	.goLogin_btn {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position:relative;
+		left:75px;
+		top:20px;
+		color:white;
+		background-color:#2e6da4;
+		border-radius:5px;
+		width:300px;
+  		height:30px;
+  		cursor:pointer;
+	}
+	
+	.goLogin_btn:hover {
+		transition : all 400ms ease;
 		background-color:#275781;
 	}
 

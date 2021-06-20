@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="Style.css">
 <meta charset="EUC-KR">
 <title></title>
 </head>
 <body>
-<h1>제품 정보 조회</h1><br>
 
-찾고자 하는 제품명을 입력해주세요.
-<form action = "ShowProducts.jsp">
-<input type="text" name = "product_name" />
-<input type="submit"></input>
-</form>
+<div class="container">
+	<div>
+		<h1>제품 조회</h1>
+		<form action = "ShowProducts.jsp">
+			<div class="input_box">
+				<input type="text" name = "product_name" placeholder="제품명을 업력하세요"/>
+			</div>
+			<div class="input_box">
+				<input class="submit_btn" type="submit" value="검색"></input>
+			</div>
+		</form>
+	</div>
+</div>
 
 </body>
 </html>
