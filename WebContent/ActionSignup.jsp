@@ -42,7 +42,7 @@ PreparedStatement stmt;
 PrintWriter script = response.getWriter();
 
 //String sqlStr = "select *from contacts";
-if (pwd.length()<1 || last_name.length()<1
+if (employee_id==null || pwd.length()<1 || last_name.length()<1
 		|| phone.length()<1 || job_title.length()<1) {//빈 문항이 있을 경우
 	script.println("<script>");
 	script.println("alert('입력이 안 된 문항이 있습니다.')");
