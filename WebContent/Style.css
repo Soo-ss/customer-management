@@ -1,0 +1,66 @@
+@charset "EUC-KR";
+	a {
+		text-decoration: none;
+	}
+
+	body {
+		display:flex;
+		justify-content:center;
+	}
+	.container {
+		position:relative;
+		top:150px;
+		text-align : center;
+		justify-content:center;
+		align-items:center;
+		background-color:#eee;
+		width:380px;
+		height:400px;
+		border-radius : 8px;
+		
+	}
+	.input_box {
+		padding-bottom:20px;
+	}
+	
+	input {
+  		width:300px;
+  		height:30px;
+	}
+	
+	.login_btn {
+		background-color:#2e6da4;
+		border-radius:5px;
+		outline:0;
+		border:0;
+		color : white;
+		cursor:pointer;
+	}
+	
+	.login_btn:hover {
+		transition : all 200ms ease;
+		background-color:#275781;
+	}
+	
+	.signup_btn {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position:relative;
+		left:40px;
+		top:20px;
+		color:white;
+		background-color:#2e6da4;
+		border-radius:5px;
+		width:300px;
+  		height:30px;
+  		top:20px;
+  		cursor:pointer;
+	}
+	
+	.signup_btn:hover {
+		transition : all 200ms ease;
+		background-color:#275781;
+	}
+
+	
