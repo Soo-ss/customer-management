@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #e91e63;
+}
+
 :root {
   --pink-color: #f06292;
 }
@@ -31,14 +40,17 @@ body {
   padding-top: 50px;
 }
 
-.container > p {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #ccc;
+.container > a {
+	padding-top: 50px;
 }
 
 .container > div {
   padding: 50px 0 50px 0;
   border-bottom: 1px solid #ccc;
+}
+
+.container > div:first-child {
+	border-top: 1px solid #ccc;
 }
 
 .container > div:last-child {
