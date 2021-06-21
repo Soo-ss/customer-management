@@ -13,6 +13,10 @@
 
 <section>
 <h1>제품 재고 현황입니다.</h1>
+<div class="menu">
+     <i class="fa fa-home" aria-hidden="true"></i
+     ><a href="../main.html">메인 페이지로 가기</a>
+</div>
 <div class="tableHeader">
 <table cellpadding="0" cellspacing="0" border="0" >
 	<thead>
