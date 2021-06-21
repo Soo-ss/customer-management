@@ -53,8 +53,8 @@ while(rs.next()) {
 	%>
 	<tr>
 	<td><%=product_name%></td>
-	<td><%=standard_cost %></td>
-	<td><%=list_price %></td>
+	<td><%=standard_cost +" $" %></td>
+	<td><%=list_price +" $"%></td>
 	<td><%=quantity %></td>
 	</tr>
 	<%
