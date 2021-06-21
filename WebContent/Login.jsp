@@ -9,26 +9,29 @@
 <title>로그인 페이지</title>
 </head>
 <body>
-
-<div class="container">
-	<div>
-	<h1><i class="fa fa-home" aria-hidden="true"></i>Soo-Hyun</h1>
-	<h1 class="login_title">로그인</h1>
-	<form action="j_security_check" method="post">
-		<div class="input_box"> 
-			<input type="text" name="j_username" placeholder="ID"/> 
-		</div>
-		<div class="input_box"> 
-			<input type="password" name="j_password" placeholder="패스워드"/>
-		</div>
-		<input class="submit_btn" type="submit" value="로그인"/>
-	</form>
-	<a href = "./Signup.html">
-		<div class="signup_btn">
-				회원가입
-		</div>
-	</a>
-	</div>
-</div>
-</body>
+    <div class="container">
+      <div>
+        <h1>Soo-Hyun</h1>
+        <p class="subTitle">Management System</p>
+        <h2>로그인</h2>
+        <form action="j_security_check" method="post">
+          <div class="input_box">
+            <input type="text" name="j_username" placeholder="ID" />
+          </div>
+          <div class="input_box">
+            <input type="password" name="j_password" placeholder="Password" />
+          </div>
+          <input class="submit_btn" type="submit" value="로그인" />
+        </form>
+        <a class="signup_btn" href="./Signup.html">아직 회원이 아니신가요? </a>
+        <div class="copy">
+          <p>
+            &copy; 2021 Soo-Hyun Management System
+            <br />
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

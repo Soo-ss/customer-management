@@ -10,7 +10,7 @@
 <body>
 <div class="container">
 	<div>
-		<h1>고객 정보 조회</h1>
+		<h1 class="bigTitle">고객 정보 조회</h1>
 		<form action = "ShowCustomers.jsp">
 			<div class="input_box">
 				<input type="text" name = "first_name" placeholder="성"/>

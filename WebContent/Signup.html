@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<div class="signup_container">
-	<h1>회원가입</h1>
+<div class="container">
+	<h1 class="bigTitle">회원가입</h1>
 	<form action = "ActionSignup.jsp">
 		<div class="input_box"> 
 			<input type="text" name = "employee_id" placeholder="ID" /><br> 
@@ -42,11 +42,8 @@
 		</div>
 		
 		<input class="submit_btn" type="submit" value="회원가입"></input>
-		<a href = "http://localhost:8080/CustomerManagement/Login.jsp">
-		<div class="goLogin_btn">
-				로그인 화면으로 돌아가기
-		</div>
-	</a>
+		<a class="signup_btn" href = "./Login.jsp">로그인 화면으로 돌아가기</a>
+	
 	</form>
 	
 </div>
