@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>데이터베이스 연결</title>
 </head>
 <body>
 <%

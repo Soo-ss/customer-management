@@ -7,7 +7,7 @@
 <head>
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/table.css" />
-<title>Insert title here</title>
+<title>품목별 제품 정보 조회</title>
 </head>
 <body>
 
@@ -56,8 +56,8 @@ while(rs.next()) {
 	<td> <%=category_name %></td>
 	<td><%=product_name %></td> 
 	<td><%=description %></td>
-	<td><%=standard_cost %></td> 
-	<td><%=list_price %></td>
+	<td><%=standard_cost+" $" %></td> 
+	<td><%=list_price +" $"%></td>
 	</tr>
 	<%	
 }

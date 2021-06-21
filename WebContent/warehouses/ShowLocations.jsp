@@ -7,7 +7,7 @@
 <head>
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/table.css" />
-<title>Insert title here</title>
+<title>지역별 창고 현황 조회</title>
 </head>
 <body>
 

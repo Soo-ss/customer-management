@@ -7,7 +7,7 @@
 <head>
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/select.css" />
-<title>국가 선택</title>
+<title>국가 선택창</title>
 </head>
 <body>
 

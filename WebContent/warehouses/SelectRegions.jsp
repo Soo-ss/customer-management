@@ -8,7 +8,7 @@
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/table.css" />
 <link rel="stylesheet" href="../css/select.css" />
-<title>대륙 선택</title>
+<title>대륙 선택창</title>
 </head>
 <body>
 

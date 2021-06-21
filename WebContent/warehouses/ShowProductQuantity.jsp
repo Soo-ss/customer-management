@@ -7,12 +7,12 @@
 <head>
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/table.css" />
-<title>Insert title here</title>
+<title>제품 재고 현황</title>
 </head>
 <body>
 
 <section>
-<h1>제품 재고 현황입니다.</h1>
+<h1>제품 재고 현황</h1>
 <div class="menu">
      <i class="fa fa-home" aria-hidden="true"></i
      ><a href="../main.html">메인 페이지로 가기</a>

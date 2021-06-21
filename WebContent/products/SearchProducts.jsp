@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" href="../css/form.css">
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>제품 검색창</title>
 </head>
 <body>
 <div class="container">
@@ -20,6 +20,7 @@
 			</div>
 		</form>
 	</div>
+	<p>※아무것도 입력하지 않을 경우 전체 제품이 조회됩니다.</p>
 </div>
 </body>
 </html>

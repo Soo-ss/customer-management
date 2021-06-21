@@ -7,11 +7,11 @@
 <head>
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="../css/select.css" />
-<title>Insert title here</title>
+<title>제품 품목선택창</title>
 </head>
 <body>
 <section>
-<h1>제품 카테고리를 선택해주세요.</h1>
+<h1>품목을 선택해주세요.</h1>
 
 <%@ include file="../ConnectDB.jsp" %>
 

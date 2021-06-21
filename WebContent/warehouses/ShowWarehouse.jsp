@@ -36,12 +36,18 @@
 
 
 <%
-PreparedStatement stmt = con.prepareStatement
-("select * from warehouses natural join locations natural join countries where warehouse_name=?");
 String warehouse_id = request.getParameter("warehouse_name");
-stmt.setString(1, warehouse_id);
-ResultSet rs = stmt.executeQuery();
+PreparedStatement stmt;
 
+if (warehouse_id !=null && warehouse_id.length()>1) {
+	stmt = con.prepareStatement
+	("select * from warehouses natural join locations natural join countries where warehouse_name=?");
+	stmt.setString(1, warehouse_id);
+} else {
+	stmt = con.prepareStatement("select * from warehouses natural join locations natural join countries");
+}
+
+ResultSet rs = stmt.executeQuery();
 
 while(rs.next()) {
 	String warehouse_name = rs.getString("warehouse_name");
