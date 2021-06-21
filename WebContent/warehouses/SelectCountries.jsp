@@ -18,7 +18,6 @@
 	<thead>
 		<tr>
 			<th>나라</th>
-			<th>조회</th>
 		</tr>		
 	</thead>
 	</table>
@@ -44,8 +43,7 @@ while(rs.next()) {
 	String country_name = rs.getString("country_name");	
 	%>
 	<tr>
-	<td><%=country_name%></td>
-	<td><a href = "ShowLocations.jsp?country_id=<%=country_id%>">창고 조회</a></td>
+	<td><a class="menu_items" href = "ShowLocations.jsp?country_id=<%=country_id%>"><%=country_name%></a></td>
 	</tr>
 	
 	<%
