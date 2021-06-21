@@ -13,7 +13,7 @@
 		<h1 class="bigTitle">창고 조회</h1>
 		<form action = "ShowWarehouse.jsp">
 			<div class="input_box">
-				<input type="text" name = "warehouse_name" placeholder="창고명을 업력하세요"/>
+				<input type="text" name = "warehouse_name" placeholder="창고명을 업력하세요" style="text-align:center"/>
 			</div>
 			<div class="input_box">
 				<input class="submit_btn" type="submit" value="검색"></input>

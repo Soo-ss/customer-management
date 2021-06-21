@@ -13,10 +13,10 @@
 		<h1 class="bigTitle">고객 정보 조회</h1>
 		<form action = "ShowCustomers.jsp">
 			<div class="input_box">
-				<input type="text" name = "first_name" placeholder="성"/>
+				<input type="text" name = "first_name" placeholder="성" style="text-align:center"/>
 			</div>
 			<div class="input_box">
-				<input type="text" name = "last_name" placeholder="이름"/>
+				<input type="text" name = "last_name" placeholder="이름" style="text-align:center"/>
 			</div>
 			
 			<div class="input_box">

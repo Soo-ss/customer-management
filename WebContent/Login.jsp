@@ -16,10 +16,10 @@
         <h2>로그인</h2>
         <form action="j_security_check" method="post">
           <div class="input_box">
-            <input type="text" name="j_username" placeholder="ID" />
+            <input type="text" name="j_username" placeholder="ID" style="text-align:center" />
           </div>
           <div class="input_box">
-            <input type="password" name="j_password" placeholder="Password" />
+            <input type="password" name="j_password" placeholder="Password" style="text-align:center"/>
           </div>
           <input class="submit_btn" type="submit" value="로그인" />
         </form>
