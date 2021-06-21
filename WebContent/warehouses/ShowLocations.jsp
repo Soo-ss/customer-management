@@ -12,7 +12,7 @@
 <body>
 
 <section>
-<h1>재고를 조회할 지역을 선택해 주십시오</h1>
+<h1>지역별 창고 현황</h1>
 <div class="menu">
      <i class="fa fa-home" aria-hidden="true"></i
      ><a href="../main.html">메인 페이지로 가기</a>

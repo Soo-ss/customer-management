@@ -6,26 +6,14 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<link rel="stylesheet" href="../css/table.css" />
-<title>Insert title here</title>
+<link rel="stylesheet" href="../css/select.css" />
+<title>국가 선택</title>
 </head>
 <body>
 
 <section>
-<h1>나라를 선택해주십시오.</h1>
-<div class="tableHeader">
-<table cellpadding="0" cellspacing="0" border="0" >
-	<thead>
-		<tr>
-			<th>나라</th>
-		</tr>		
-	</thead>
-	</table>
-</div>
-	
-<div class="tableContent">
-<table cellpadding="0" cellspacing="0" border="0">
-<tbody>
+<h1>국가를 선택해주십시오.</h1>
+
 
 
 <%@ include file="../ConnectDB.jsp" %>
@@ -42,10 +30,9 @@ while(rs.next()) {
 	String country_id = rs.getString("country_id");
 	String country_name = rs.getString("country_name");	
 	%>
-	<tr>
-	<td><a class="menu_items" href = "ShowLocations.jsp?country_id=<%=country_id%>"><%=country_name%></a></td>
-	</tr>
-	
+		<div class="select_menu">
+		<a href = "ShowLocations.jsp?country_id=<%=country_id%>">
+		<%=country_name%></a></div>
 	<%
 }
 rs.close();
@@ -53,9 +40,7 @@ stmt.close();
 con.close();
 
 %>
-</tbody>
-</table>
-</div>
+
 </section>
 
 </body>

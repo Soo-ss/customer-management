@@ -12,7 +12,7 @@
 <body>
 
 <section>
-<h1>제품 카테고리별로 보기</h1>
+<h1>품목별 제품 정보</h1>
 <div class="menu">
      <i class="fa fa-home" aria-hidden="true"></i
      ><a href="../main.html">메인 페이지로 가기</a>
@@ -21,11 +21,11 @@
 <table cellpadding="0" cellspacing="0" border="0" >
 	<thead>
 		<tr>
+			<th>품목</th>
 			<th>제품명</th>
 			<th>성능</th>
 			<th>기준가</th>
 			<th>권장소비자가격</th>
-			<th>품목</th>
 		</tr>		
 	</thead>
 	</table>
@@ -53,11 +53,11 @@ while(rs.next()) {
 	String category_name = rs.getString(7);
 	%>
 	<tr>
+	<td> <%=category_name %></td>
 	<td><%=product_name %></td> 
 	<td><%=description %></td>
 	<td><%=standard_cost %></td> 
 	<td><%=list_price %></td>
-	<td> <%=category_name %></td>
 	</tr>
 	<%	
 }
