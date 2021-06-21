@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink-color: #f06292;
+}
+
+i {
+  padding-right: 8px;
+  /* color: var(--pink-color); */
+}
+
+body {
+  background: -webkit-linear-gradient(left, #f8bbd0, #f06292);
+  background: linear-gradient(to right, #f8bbd0, #f06292);
+  font-family: "Noto Sans KR";
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container > h1 {
+  padding-top: 50px;
+}
+
+.container > p {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.container > div {
+  padding: 50px 0 50px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.container > div:last-child {
+  border-bottom: none;
+}
+
+.container > div > ul {
+  padding: 20px;
+}
+
+.container > div > ul > li {
+  list-style: none;
+  margin: 10px;
+}
+
+.container > div > ul > li > a {
+  text-decoration: none;
+  /* color: var(--pink-color); */
+  color: #fff;
+  font-size: 19px;
+}

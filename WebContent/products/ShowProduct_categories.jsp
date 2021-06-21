@@ -6,13 +6,32 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel="stylesheet" href="../css/table.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<table border=1>
-<tr><th>제품명<th>성능<th>기준가<th>권장소비자가격<th>품목</tr>
 
-<%@ include file="ConnectDB.jsp" %>
+<section>
+<h1>고객 전체 보기</h1>
+<div class="tableHeader">
+<table cellpadding="0" cellspacing="0" border="0" >
+	<thead>
+		<tr>
+			<th>제품명</th>
+			<th>성능</th>
+			<th>기준가</th>
+			<th>권장소비자가격</th>
+			<th>품목</th>
+		</tr>		
+	</thead>
+	</table>
+</div>
+	
+<div class="tableContent">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+
+<%@ include file="../ConnectDB.jsp" %>
 
 
 <%
@@ -28,9 +47,14 @@ while(rs.next()) {
 	double standard_cost = rs.getDouble(5);
 	double list_price = rs.getDouble(6);
 	String category_name = rs.getString(7);
-	%><tr><td><%=product_name %> 
-	<td><%=description %> <td><%=standard_cost %> <td><%=list_price %>
-	<td> <%=category_name %> 
+	%>
+	<tr>
+	<td><%=product_name %></td> 
+	<td><%=description %></td>
+	<td><%=standard_cost %></td> 
+	<td><%=list_price %></td>
+	<td> <%=category_name %></td>
+	</tr>
 	<%	
 }
 rs.close();
@@ -38,6 +62,10 @@ stmt.close();
 con.close();
 
 %>
+</tbody>
 </table>
+</div>
+</section>
+
 </body>
 </html>

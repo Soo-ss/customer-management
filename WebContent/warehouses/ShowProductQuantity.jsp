@@ -6,14 +6,31 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel="stylesheet" href="../css/table.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<table border=1>
-<h1>제품 재고 현황입니다.</h1><br>
-<tr><th>제품명<th>기준가<th>원가<th>재고</tr>
 
-<%@ include file="ConnectDB.jsp" %>
+<section>
+<h1>제품 재고 현황입니다.</h1>
+<div class="tableHeader">
+<table cellpadding="0" cellspacing="0" border="0" >
+	<thead>
+		<tr>
+			<th>제품명</th>
+			<th>기준가</th>
+			<th>원가</th>
+			<th>재고</th>
+		</tr>		
+	</thead>
+	</table>
+</div>
+	
+<div class="tableContent">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+	
+<%@ include file="../ConnectDB.jsp" %>
 
 
 <%
@@ -29,7 +46,13 @@ while(rs.next()) {
 	String standard_cost = rs.getString("standard_cost");
 	String list_price = rs.getString("list_price");
 	String quantity = rs.getString("quantity");
-	%><tr><td><%=product_name%><td><%=standard_cost %><td><%=list_price %><td><%=quantity %>
+	%>
+	<tr>
+	<td><%=product_name%></td>
+	<td><%=standard_cost %></td>
+	<td><%=list_price %></td>
+	<td><%=quantity %></td>
+	</tr>
 	<%
 }
 rs.close();
@@ -37,6 +60,10 @@ stmt.close();
 con.close();
 
 %>
+</tbody>
 </table>
+</div>
+</section>
+
 </body>
 </html>

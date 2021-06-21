@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
-	<div>제품 정보 보기
-		<ul>
-			<li><a href = "http://localhost:8080/CustomerManagement/SelectCategories.jsp">품목별 조회</a></li>
-			<li><a href = "http://localhost:8080/CustomerManagement/SearchProducts.html">이름으로 찾기</a> </li>
-		</ul>
-	</div>
-	
-	<div>고객 정보 보기
-		<ul>
-			<li><a href = "http://localhost:8080/CustomerManagement/SearchCustomers.html">고객 이름으로 찾기</a></li>
-			<li><a href = "http://localhost:8080/CustomerManagement/ShowCustomers.jsp">전체 고객 보기</a></li>
-		</ul>
-	</div>
-	
-	<div>창고 정보 보기
-		<ul>
-			<li><a href = "http://localhost:8080/CustomerManagement/SelectRegions.jsp">창고 조회</a></li>
-		</ul>
-	</div>
+  <head>
+    <meta charset="EUC-KR" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fa fa-home" aria-hidden="true"></i>Soo-Hyun</h1>
+      <p>고객 관리 시스템</p>
+      <div>
+        <h2><i class="fa fa-desktop" aria-hidden="true"></i>제품 정보 보기</h2>
+        <ul>
+          <li>
+            <i class="fa fa-usd" aria-hidden="true"></i
+            ><a href="./products/SelectCategories.jsp">품목별 조회</a>
+          </li>
+          <li>
+            <i class="fa fa-usd" aria-hidden="true"></i
+            ><a href="./products/SearchProducts.jsp">이름으로 찾기</a>
+          </li>
+        </ul>
+      </div>
 
-</body>
+      <div>
+        <h2><i class="fa fa-users" aria-hidden="true"></i>고객 정보 보기</h2>
+        <ul>
+          <li>
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            <a href="./customers/SearchCustomers.jsp">고객 이름으로 찾기</a>
+          </li>
+          <li>
+            <i class="fa fa-usd" aria-hidden="true"></i
+            ><a href="./customers/ShowCustomers.jsp">전체 고객 보기</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2><i class="fa fa-archive" aria-hidden="true"></i>창고 정보 보기</h2>
+        <ul>
+          <li>
+            <i class="fa fa-usd" aria-hidden="true"></i
+            ><a href="./warehouses/SelectRegions.jsp">창고 조회</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

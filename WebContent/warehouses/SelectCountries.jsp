@@ -6,14 +6,30 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel="stylesheet" href="../css/table.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<table border=1>
-<h1>나라를 선택해주십시오.</h1><br>
-<tr><th>나라<th>조회</tr>
 
-<%@ include file="ConnectDB.jsp" %>
+<section>
+<h1>나라를 선택해주십시오.</h1>
+<div class="tableHeader">
+<table cellpadding="0" cellspacing="0" border="0" >
+	<thead>
+		<tr>
+			<th>나라</th>
+			<th>조회</th>
+		</tr>		
+	</thead>
+	</table>
+</div>
+	
+<div class="tableContent">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+
+
+<%@ include file="../ConnectDB.jsp" %>
 
 
 <%
@@ -26,8 +42,12 @@ ResultSet rs = stmt.executeQuery();
 while(rs.next()) {
 	String country_id = rs.getString("country_id");
 	String country_name = rs.getString("country_name");	
-	%><tr><td><%=country_name%>
-	<td><a href = "ShowLocations.jsp?country_id=<%=country_id%>">창고 조회</a>
+	%>
+	<tr>
+	<td><%=country_name%></td>
+	<td><a href = "ShowLocations.jsp?country_id=<%=country_id%>">창고 조회</a></td>
+	</tr>
+	
 	<%
 }
 rs.close();
@@ -35,6 +55,10 @@ stmt.close();
 con.close();
 
 %>
+</tbody>
 </table>
+</div>
+</section>
+
 </body>
 </html>

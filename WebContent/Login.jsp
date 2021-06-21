@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="./css/form.css">
 
 <meta charset="EUC-KR">
 <title>로그인 페이지</title>
@@ -12,6 +12,7 @@
 
 <div class="container">
 	<div>
+	<h1><i class="fa fa-home" aria-hidden="true"></i>Soo-Hyun</h1>
 	<h1 class="login_title">로그인</h1>
 	<form action="j_security_check" method="post">
 		<div class="input_box"> 
@@ -22,7 +23,7 @@
 		</div>
 		<input class="submit_btn" type="submit" value="로그인"/>
 	</form>
-	<a href = "http://localhost:8080/CustomerManagement/Signup.html">
+	<a href = "./Signup.html">
 		<div class="signup_btn">
 				회원가입
 		</div>

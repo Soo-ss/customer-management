@@ -6,14 +6,33 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel="stylesheet" href="../css/table.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<table border=1>
-<h1>재고를 조회할 지역을 선택해 주십시오</h1><br>
-<tr><th>주소<th>우편번호<th>도시명<th>주<th>창고이름<th>조회</tr>
 
-<%@ include file="ConnectDB.jsp" %>
+<section>
+<h1>재고를 조회할 지역을 선택해 주십시오</h1>
+<div class="tableHeader">
+<table cellpadding="0" cellspacing="0" border="0" >
+	<thead>
+		<tr>
+			<th>주소</th>
+			<th>우편번호</th>
+			<th>도시명</th>
+			<th>주</th>
+			<th>창고이름</th>
+			<th>조회</th>
+		</tr>		
+	</thead>
+	</table>
+</div>
+	
+<div class="tableContent">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+	
+<%@ include file="../ConnectDB.jsp" %>
 
 
 <%
@@ -32,8 +51,15 @@ while(rs.next()) {
 	String city = rs.getString("city");
 	String state = rs.getString("state");
 	String warehouse_name = rs.getString("warehouse_name");
-	%><tr><td><%=address%><td><%=postal_code%><td><%=city%><td><%=state%><td><%=warehouse_name %>
-	<td><a href = "ShowProductQuantity.jsp?warehouse_id=<%=warehouse_id%>">재고 조회</a>
+	%>
+	<tr>
+	<td><%=address%></td>
+	<td><%=postal_code%></td>
+	<td><%=city%></td>
+	<td><%=state%></td>
+	<td><%=warehouse_name %></td>
+	<td><a href = "ShowProductQuantity.jsp?warehouse_id=<%=warehouse_id%>">재고 조회</a></td>
+	</tr>
 	<%
 }
 rs.close();
@@ -41,6 +67,10 @@ stmt.close();
 con.close();
 
 %>
+</tbody>
 </table>
+</div>
+</section>
+
 </body>
 </html>

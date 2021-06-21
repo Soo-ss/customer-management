@@ -1,12 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="../css/form.css">
 <meta charset="EUC-KR">
-<title></title>
+<title>Insert title here</title>
 </head>
 <body>
-
 <div class="container">
 	<div>
 		<h1>제품 조회</h1>
@@ -20,6 +21,5 @@
 		</form>
 	</div>
 </div>
-
 </body>
 </html>

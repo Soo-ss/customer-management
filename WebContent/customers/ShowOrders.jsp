@@ -6,13 +6,32 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<link rel="stylesheet" href="../css/table.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<table border=1>
-<tr><th>주문 번호<th>주문 상태<th>주문 날짜<th>수량<th>단가<th>주문 제품 상세보기</tr>
+<section>
+<h1>고객 전체 보기</h1>
+<div class="tableHeader">
+<table cellpadding="0" cellspacing="0" border="0" >
+	<thead>
+		<tr>
+			<th>주문 번호</th>
+			<th>주문 상태</th>
+			<th>주문 날짜</th>
+			<th>수량</th>
+			<th>단가</th>
+			<th>주문 제품 상세보기</th>
+		</tr>		
+	</thead>
+	</table>
+</div>
 
-<%@ include file="ConnectDB.jsp" %>
+<div class="tableContent">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+
+<%@ include file="../ConnectDB.jsp" %>
 
 
 <%
@@ -30,9 +49,15 @@ while(rs.next()) {
 	String order_date = rs.getString("order_date");
 	int quantity = rs.getInt("quantity");
 	double unit_price = rs.getDouble("unit_price");
-	%><tr><td><%=order_id %><td><%=status %>
-	<td><%=order_date %><td><%=quantity %><td><%=unit_price %>
-	<td><a href = "ShowOrderItems.jsp?product_id=<%=product_id%>">제품 상세조회</a>
+	%>
+	<tr>
+	<td><%=order_id %></td>
+	<td><%=status %></td>
+	<td><%=order_date %></td>
+	<td><%=quantity %></td>
+	<td><%=unit_price %></td>
+	<td><a href = "ShowOrderItems.jsp?product_id=<%=product_id%>">제품 상세조회</a></td>
+	</tr>
 	 <%
 }
 rs.close();
@@ -40,6 +65,10 @@ stmt.close();
 con.close();
 
 %>
+</tbody>
 </table>
+</div>
+</section>
+
 </body>
 </html>
