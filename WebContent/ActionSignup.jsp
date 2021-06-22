@@ -27,7 +27,6 @@ String phone = request.getParameter("phone");
 String manager_id = request.getParameter("manager_id");
 int int_manager_id = Integer.parseInt(manager_id);//getParameter값은 항상 String으로만 받기 때문에 
 int int_employee_id = Integer.parseInt(employee_id);//DB에 정수값이 들어가야 하는id는 int로 형변환
-int arg= int_employee_id+int_manager_id;
 String role = "employee";
 String job_title = request.getParameter("job_title");
 
@@ -41,9 +40,8 @@ String dateNtime = dateFormat.format(date); //날짜 가져오기
 PreparedStatement stmt;
 PrintWriter script = response.getWriter();
 
-//String sqlStr = "select *from contacts";
-if (employee_id==null || pwd.length()<1 || last_name.length()<1
-		|| phone.length()<1 || job_title.length()<1) {//빈 문항이 있을 경우
+if (employee_id.length() < 1 || pwd.length()<1 ||  first_name.length()<1 || last_name.length()<1
+		|| email.length()<1 || phone.length()<1 || job_title.length()<1) {//빈 문항이 있을 경우
 	script.println("<script>");
 	script.println("alert('입력이 안 된 문항이 있습니다.')");
 	script.println("history.back()");
@@ -67,14 +65,13 @@ if (employee_id==null || pwd.length()<1 || last_name.length()<1
 			stmt.setString(8, job_title);
 			stmt.setString(9, role);
 			stmt.setString(10, pwd);
-			
 			ResultSet rs = stmt.executeQuery();
 			rs.close();
 			stmt.close();
 			con.close();
 			script.println("<script>");
 			script.println("alert('회원가입이 완료되었습니다.')");
-			script.println("location.href = 'Login.jsp'");
+			script.println("location.href = 'main.html'");
 			script.println("</script>");
 	} catch (Exception e) { //이미 존재하는 아이디일 경우
 		script.println("<script>");

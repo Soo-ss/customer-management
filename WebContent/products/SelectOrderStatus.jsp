@@ -13,7 +13,7 @@
 <body>
 
 <section>
-<h1>배송 상태를 선택해 주세요.</h1>
+<h1>배송 상태를 선택해주십시오.</h1>
 	<div class ="select_menu">
 		<a href = "./ShowAllStatus.jsp">전체 배송</a>
 	</div>

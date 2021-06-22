@@ -13,7 +13,7 @@
 <body>
 
 <section>
-<h1>재고를 조회할 대륙을 선택해 주십시오</h1>
+<h1>재고를 조회할 대륙을 선택해주십시오</h1>
 
 
 <%@ include file="../ConnectDB.jsp" %>

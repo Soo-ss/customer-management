@@ -11,7 +11,7 @@
 </head>
 <body>
 <section>
-<h1>품목을 선택해주세요.</h1>
+<h1>품목을 선택해주십시오.</h1>
 
 <%@ include file="../ConnectDB.jsp" %>
 
